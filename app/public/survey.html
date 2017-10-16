@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BFF Finder Survey</title>
+
+	<!-- CSS and JS Booty -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Font Awesome Awesomenessn-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+</head>
+<body>
+	
+	<!-- Master container div -->
+	<div class="container">
+
+	<h2>Let's find out if you can hang</h2>
+	<br>
+
+	<h3>Who are you?</h3>
+	<h4>What's your name?</h4>
+	<input type="text" name="name" id="friendName" class="form-control" required >
+
+	<h4>What do you look like?</h4>
+	<input type="text" name="image" id="friendImage" class="form-control" required >
+
+	<hr>
+
+	<!-- question question question -->
+
+	<!-- question 1 -->
+	<h3>Question Uno</h3>
+		<h4>What's your deal with brunch? Like it? Hate it?</h4>
+		<select data-placeholder="uno" class="chosen-select" id="q1">
+			<option value=""></option>
+			<option value="1">1 Hate it</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 Love it</option>
+		</select>
+
+		<!-- Question 2 -->
+		<h3>Question Dos</h3>
+		<h4>What's the earliest you can meet up on a Sunday morning and call it "brunch"?</h4>
+		<select data-placeholder="dos" class="chosen-select" id="q2">
+			<option value=""></option>
+			<option value="1">7am</option>
+			<option value="2">8am</option>
+			<option value="3">9am</option>
+			<option value="4">10am</option>
+			<option value="5">11am</option>
+		</select>
+
+		<!-- Question 3 -->
+		<h3>Question Tres</h3>
+		<h4>O.K., wait, you say you like brunch, but are you just going to order a dry English muffin and a black coffee like a weirdo?</h4>
+		<select data-placeholder="tres" class="chosen-select" id="q3">
+			<option value=""></option>
+			<option value="1">1 (Strongly Disagree)</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<!-- Question 4 -->
+		<h3>Question Quattro</h3>
+		<h4>How many Facebook invites do you send a week?</h4>
+		<select data-placeholder="quattro" class="chosen-select" id="q4">
+			<option value=""></option>
+			<option value="1">Don't have Facebook</option>
+			<option value="2">1</option>
+			<option value="3">2</option>
+			<option value="4">3</option>
+			<option value="5">Greater than 3</option>
+		</select>
+
+		<!-- Question 5 -->
+		<h3>Question Cinco</h3>
+		<h4>Speaking of parties, do you like to have a big blowout birthday bash, or is a moderately sized family-styled-Chinese dinner thing-good?</h4>
+		<select data-placeholder="cinco" class="chosen-select" id="q5">
+			<option value=""></option>
+			<option value="1">Chinese dinner</option>
+			<option value="2">Minor hangover</option>
+			<option value="3">Moderate hangover</option>
+			<option value="4">Week long hangover</option>
+			<option value="5">Super party extravaganza</option>
+		</select>
+
+		<!-- Question 6 -->
+		<h3>Question Seis</h3>
+		<h4>Back to housewarmings: How many times have you moved in the past five years?</h4>
+		<select data-placeholder="seis" class="chosen-select" id="q6">
+			<option value=""></option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+
+		<!-- Question 7 -->
+		<h3>Question Siete</h3>
+		<h4>Do you like music? O.K., but are you, like, super into music? O.K., but do you need your friends to be super into music, too, or is it fine if their favorite band is the Barenaked Ladies or something?</h4>
+		<select data-placeholder="siete" class="chosen-select" id="q7">
+			<option value=""></option>
+			<option value="1">Barenaked Ladies</option>
+			<option value="2">Rage Against the Machine</option>
+			<option value="3">Black Sabbath</option>
+			<option value="4">Justin Bieber</option>
+			<option value="5">Two Chainz</option>
+		</select>
+
+		<!-- Question 8 -->
+		<h3>Question Ocho</h3>
+		<h4>Do you like video games? Either way, would you judge a person who chose to play Skyrim on a Friday night instead of attending your housewarming party and playing beer pong with a bunch of strangers?</h4>
+		<select data-placeholder="ocho" class="chosen-select" id="q8">
+			<option value=""></option>
+			<option value="1">Hard judgement</option>
+			<option value="2">Mild judgement</option>
+			<option value="3">Drunken stupour</option>
+			<option value="4">Jealous of Skyrim play</option>
+			<option value="5">Play Skyrim</option>
+		</select>
+
+		<!-- Question 9 -->
+		<h3>Question Nueve</h3>
+		<h4>Are you in a book club? If so, is it just, like, a fun thing you do, or are you always talking about "book club" and all the "important" books you read for it and all the "book-club drama," like anyone not in the book club cares?</h4>
+		<select data-placeholder="nueve" class="chosen-select" id="q9">
+			<option value=""></option>
+			<option value="1">Fun thing</option>
+			<option value="2">Always talk about book club</option>
+			<option value="3">So important, these books</option>
+			<option value="4">Book club drama</option>
+			<option value="5">Why doesn't anyone care</option>
+		</select>
+
+		<!-- Question 10 -->
+		<h3>Question Dies</h3>
+		<h4>If your "adult friend" <i>did</i> come to your party, but felt out of place after a few minutes and left, would you text at 3 a.m., like, "Hey, (bro/girl), where'd you go?" or just leave it alone and never speak of it again?</h4>
+		<select data-placeholder="dies" class="chosen-select" id="q10">
+			<option value=""></option>
+			<option value="1">Never speak</option>
+			<option value="2">Party on Wayne</option>
+			<option value="3">Who's next in beer pong?</option>
+			<option value="4">I love this song!</option>
+			<option value="5">Bro? Girl?</option>
+		</select>
+
+		<br>
+		<br>
+
+		<!-- submit button -->
+		<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"></i> Submit</button>
+
+		<hr>
+
+		<!-- footer -->
+		<footer class="footer">
+
+			<!-- footer container div -->
+			<div class="container">
+				<p><a href="/data/friends">API Friends List</a> | <a href="https://github.com/colebearski/friend-finder">GitHub Repo</a></p>
+			</div>
+		</footer>
+
+	<!-- master container div -->
+	</div>
+
+	<!-- BS modal for our awesome match -->
+	<div id="resultsModal" class="modal">
+		<div class="modal-content">
+			<h4>Did we just become best friends?</h4>
+			<div class="divider"></div>
+
+			<h5 id="userMatch"></h5>
+			<img id="userMatchImage" class="materialboxed" width="650" src="">
+		</div>
+	</div>
+
+	<!-- let's get scripting -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			// modal params
+
+			$('.modal').modal({
+				dismissible: false, // clicking outside the modal will dissmiss the feature
+				opactiy: .5, // modal background
+				inDuration: 300, // transition to duration
+				outDuration: 200, // trans to out
+				startingTop: '4%', // starting top attr
+				endingTop: '10%' // ending top attr
+			});
+		});
+
+		// submit button
+		$('#submit').on("click", function (event) {
+			event.preventDefault();
+
+			// gather data
+			var userInput = {
+				name: $('#friendName').val().trim(),
+				photo: $('#friendImage').val().trim(),
+
+				scores: [
+							$("#q1").val().trim(),
+							$("#q2").val().trim(),
+							$("#q3").val().trim(),
+							$("#q4").val().trim(),
+							$("#q5").val().trim(),
+							$("#q6").val().trim(),
+							$("#q7").val().trim(),
+							$("#q8").val().trim(),
+							$("#q9").val().trim(),
+							$("#q10").val().trim()
+				]
+			};
+
+			// add user to our friends, if they're truly a friend
+			$.post('/api/friends', userInput)
+			.done(function (data) {
+
+				// set the name and image values of friend match
+				$('#userMatch').html(data.matchName);
+				$('#userMatchImage').attr("src", data.matchImage);
+
+				// open the damn modal
+				$('#resultsModal').modal('open');
+			});
+
+		});
+
+	</script>
+
+</body>
+</html>
